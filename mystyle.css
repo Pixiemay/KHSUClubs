@@ -36,7 +36,7 @@ header {
 }
 .nav_buttons {
     width: 15vw;
-    height: 3vh;
+    height: 1vh;
     line-height: 8.5vh;
     text-align: center;
     text-decoration: none;
@@ -64,6 +64,7 @@ header {
     padding-bottom:50px;
 }
 .club-img {
+    display: flex;
     width: 25vw;
     border-radius: 35px;
 }
@@ -98,4 +99,45 @@ header {
     color: white;
     font-size: 20px;
     font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+    header {
+        margin-left: 2.5vw;
+    }
+    .navigator {
+        height: 4vh;
+    }
+    .nav_buttons {
+        margin-top: 1vh;
+        height: 2vh;
+        line-height: 1.8vh;
+        font-size: 2.5vw;
+    }
+    .logo {
+        width: 27vw;
+    }
+    .main {
+        margin: 0 0 0 5vw;
+    }
+    .club-img {
+        border-radius: 15px;
+        width: 43vw;
+    }
+    .club-block {
+        width: 45vw;
+        height: 19.5vh;
+        margin-left: 7vw;
+        border-radius: 15px;
+    }
+    .club-name {
+        font-size: 12px;
+    }
+    .club-info {
+        margin-top: 1vh;
+        margin-bottom: 4vh;
+        font-size: 8px;
+    }
+    .club-ruk {
+        font-size: 8px;
+    }
 }
