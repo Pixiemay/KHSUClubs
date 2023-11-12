@@ -9,16 +9,22 @@ body {
     background: #a8ff78;  /* fallback for old browsers */
     background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.header {
+header {
     display: flex;
     position: sticky;
     top: 0;
     z-index: 999;
     width: 100vw;
     height: 11vh;
+    transition: transform 0.3s ease-in-out; /* Заменили top на transform */
+    transform: translateY(0)
 }
-.header_hidden {
+.header-hidden {
     transform: translateY(-100%);
+  }
+.content {
+    margin-top: 60px; /* чтобы контент не скрывался под header */
+    padding: 20px;
   }
 .logo {
     width: 14vw;
@@ -47,9 +53,19 @@ body {
     font-size: 1.5vw;
     color: white;
 }
+.text-main {
+    display: flex;
+    color: white;
+    margin-bottom: 15vh;
+    font-size: 23px;
+    font-weight: 600;
+    word-break: break-all;
+    text-align:justify;
+    line-height: 3vh;
+}
 .main {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-left: 22vw;
     margin-right: 16vw;
     max-width: 55vw;
@@ -101,7 +117,7 @@ body {
     font-weight: 600;
     margin-top: 8vh;
     word-break: break-all;
-    text-align:justify
+    text-align:justify;
 }
 .club-ruk {
     position:absolute;
