@@ -92,6 +92,7 @@ header {
     display: flex;
     width: 25vw;
     border-radius: 35px;
+    box-shadow: 15px 15px 10px rgb(0, 150, 95, 0.5);
 }
 .club-block {
     display: flex;
@@ -107,6 +108,7 @@ header {
     padding-top: 2vh;
     padding-bottom: 2vh;
     flex-direction: column;
+    box-shadow: 15px 15px 10px rgb(0, 150, 95, 0.5);
 }
 .club-name {
     display: flex;
